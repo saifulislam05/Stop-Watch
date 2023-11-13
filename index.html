@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stop Watch</title>
     <link href="/dist/output.css" rel="stylesheet">
+
+    <script defer src="script.js"></script>
 </head>
 
 <body class="w-screen h-screen flex justify-center items-center">
@@ -20,20 +22,20 @@
             </div>
             <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
                 <span class="countdown font-mono text-5xl">
-                    <span id="min" style="--value:2;"></span>
+                    <span id="min" style="--value:00;"></span>
                 </span>
                 min
             </div>
             <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
                 <span class="countdown font-mono text-5xl">
-                    <span id="sec" style="--value:32;"></span>
+                    <span id="sec" style="--value:00;"></span>
                 </span>
                 sec
             </div>
-            <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                <span class="countdown font-mono text-5xl">
-                    <span id="ms" style="--value:32;"></span>
-                </span>
+            <div class="min-w-[5rem] flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+                <span id="ms" class="font-mono text-5xl" >
+					000
+				</span>
                 ms
             </div>
         </div>
